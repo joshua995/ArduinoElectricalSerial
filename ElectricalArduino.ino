@@ -18,7 +18,7 @@ void setup() {
 
 void loop() {
   Serial.println("Photoresistor: " + String(analogRead(photoresistor)));
-  if(analogRead(photoresistor) <= 30){
+  if(analogRead(photoresistor) <= 50){
     if (!isDark){
       digitalWrite(lights, HIGH);
       isDark = true;
@@ -28,7 +28,7 @@ void loop() {
   }
   if(Serial.available()) {
     String data = Serial.readString();// Reads the serial data sent from the Python code
-    brightness = map(data.toInt(), 0, 900, 255, 0);
+    brightness = map(data.toInt(), 0, 900, 50, 0);
     message = "Brightness: " + String(brightness);
     analogWrite(lights, brightness);
     delay(1000);
