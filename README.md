@@ -12,4 +12,4 @@ To test the program:
 - To control the lights
   - Run the ElectricalArduinoControl.py in python
   - Click the "l" key on the keyboard, and enter a number between 0 and 900, then click enter.
-    The LED should change accordingly to the brightness calculated.
+    The LED should change according to the brightness calculated.
