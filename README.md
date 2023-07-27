@@ -5,7 +5,7 @@ To test the program:
   - A0: photoresitor
   - A1: thermistor
   - Digital PWM 3: lights
-  - Digital PWN 4: fans
+  - Digital PWM 4: fans
 - Upload the .ino file to your arduino and wire up the circuit accordingly
 - To control the lights
   - Run the ElectricalArduinoControl.py in python
