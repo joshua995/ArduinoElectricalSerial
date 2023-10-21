@@ -8,6 +8,7 @@ from pynput import keyboard
 from pynput.keyboard import Key, Listener
 
 # Baud rate must be the same as the arduino code
+# COM9 is the port that the arduino is connected to. Different OS have different naming conventions to define the port
 arduino = serial.Serial('COM9', 9600, timeout=.1) 
 
 def on_press(key):
